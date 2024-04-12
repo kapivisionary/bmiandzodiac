@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Web App</title>
+  <link rel="stylesheet" type="text/css" href="project.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+  <script src="project.js" async></script>
+  <link rel="icon" type="image" href="images/kapi.jpg">
+</head>
+<body>
+
+
+ <div class="container">
+    <div class="sidebar">
+      <button class="tablink" onclick="toggleContent('introduction')">Introduction</button>
+      <button class="tablink" onclick="toggleContent('about-us')">About Us</button>
+      <button class="tablink" onclick="toggleContent('contact-us')">Contact Us</button>
+    </div>
+
+    <div class="content">
+      <details id="introduction" style="display: none;">
+        <summary>Introduction</summary>
+            <h2>Introduction</h2>
+            <p style="color:black">THIS is a website that calculates the exact day, zodiac sign, and BMI:
+
+              "Welcome to <b>BMI AND ZODIAC TELLER</b>, your one-stop destination for accurate calculations of important personal metrics.My website is dedicated to providing you with the tools to calculate the exact day, determine your zodiac sign, and calculate your Body Mass Index (BMI).
+              
+              Have you ever wondered what day of the week you were born on? Our unique 'Exact Day Calculator' takes your birth date as input and instantly reveals the precise day of the week you came into this world. Whether you're curious about your own birth or want to calculate the day for historical events, my calculator is here to provide you with the answer.
+              
+              Discover your zodiac sign with my 'Zodiac Sign Finder.' Enter your birth date, and my algorithm will determine your zodiac sign based on the traditional astrological system. Unveil the characteristics, traits, and compatibility associated with your zodiac sign, and explore the fascinating world of astrology.
+              
+              Maintaining a healthy lifestyle is essential, and my 'BMI Calculator' allows you to assess your Body Mass Index effortlessly. By inputting your height and weight, my calculator provides you with your BMI value, helping you understand where you stand on the weight spectrum and providing insights into your overall health and fitness.
+              
+              At <b>BMI AND ZODIAC TELLER</b>, accuracy and user-friendliness are my top priorities. I strive to deliver precise calculations and an intuitive user experience, ensuring that you have quick and reliable access to valuable information about yourself.
+              
+              Start exploring my website today and unlock a wealth of knowledge about your birth day, zodiac sign, and BMI. Empower yourself with a deeper understanding of your personal metrics and make informed decisions for a healthier and more fulfilled life. Let us assist you on your journey towards self-discovery and well-being."
+              
+              </p>
+              </details>
+          </div>
+
+          <details id="about-us" style="display: none;">
+            <summary>About Us</summary>
+<p>
+<a href="https://tlgur.pro/zgyG8S0Q" target="
+_blank">
+I AM    
+</a>  kapital gebrehiwet and I am a third year student in mekelle university and i am passionate on creating websites.
+</p>
+</details>
+</div>
+
+<details id="contact-us" style="display: none;">
+  <summary>Contact Us</summary>
+        <h2 style="color:darkcyan">Contact Us</h2>
+        <p>in this section i am going  to provide you  my contact address.</p><br>
+        <P>full name:kapital gebrehiwet</P>
+        <p>user-name= EITM/UR178681/12</p>
+        <p>email address:kapigere00@gmail.com</p><br>
+        <p>phone number :0930259299</p>
+        </details>
+      </div>
+    
+  <h1 style="background-color: beige;">BMI AND ZODIAC TELLER</h1>
+  <!-- BMI Calculator -->
+  <div class="app-section bmi-calculator" >
+    <h2>BMI Calculator</h2>
+    <div class="input-container">
+      <input type="number" id="heightInput" placeholder="Height (cm)">
+      <input type="number" id="weightInput" placeholder="Weight (kg)">
+      <button id="calculateBmiButton" onclick="calculatebmi()">Calculate BMI</button>
+      <br>
+    </div>
+    <div style="background-color: bisque; color: blueviolet; text-align: center;" >
+    <p id="bmiResult"></p>
+    <p id="bmiCategoryResult"></p>
+    </div>
+    <h1 style="background-color: blueviolet;">BRIEF NOTE ON BMI</h1>
+    <div style="background-color:grey;"> <p>
+BMI stands for Body Mass Index. It is a numerical value calculated based on a person's weight and height. 
+The BMI is used as a screening tool to assess whether a person has a healthy body weight for their height.
+It provides a rough estimate of body fat and helps determine if a person is <a href="https://youtu.be/sjprbUirHgQ " title="video">underweight</a>, normal weight,  overweight, or <a href="https://youtu.be/UKnhbqIM0wo" title="video">obese</a>.
+
+The formula to calculate BMI is as follows:
+
+BMI = weight (in kilograms) / (height (in meters))^2
+
+Alternatively, you can use the following formula if weight is measured in pounds and height is measured in inches:
+
+BMI = (weight (in pounds) / (height (in inches))^2) x 703
+
+Once you calculate your BMI, it falls into one of the following categories:
+
+<b>Underweight:</b> BMI less than 18.5
+<b>Normal weight:</b> BMI between 18.5 and 24.9
+<b>Overweight:</b> BMI between 25 and 29.9
+<b>Obese:</b> BMI of 30 or higher
+It's important to note that while BMI is a useful screening tool for most people, it does have limitations. 
+For example, it doesn't take into account factors such as muscle mass, bone density, and distribution of fat, 
+which can vary among individuals. Therefore, it's always a good idea to consult with a healthcare professional 
+for a comprehensive assessment of your health.
+    </p> </div>
+    <img src="https://emva.net/wp-content/uploads/2020/06/normal-bmi-for-women.jpg" alt="BMI IMAGE" width="60%" height="60%"><br>
+    <iframe  src="https://www.youtube.com/embed/t9e46CV_pyM?si=zqdMoutZCVTJBOsr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </div>
+  </div>
+  <div class="app-section birthday-calculator">
+    <h2>Birthdate Calculator</h2>
+    <div class="input-container">
+      <input type="number" id="birthDateInput" placeholder="Date">
+      <input type="number" id="birthMonthInput" placeholder="Month">
+      <input type="number" id="birthYearInput" placeholder="Year">
+      <button onclick="calculateBirthDay()">TELL</button>
+    </div>
+    <div style="background-color: rgb(149, 149, 64);">
+    <p id="birthDayResult"></p>
+    <p id="zodiacSignResult"></p>
+    <p id="behaviour"></p>
+    <p id="ageDisplay"></p>
+    </div>
+   
+    <h1 style="background-color: aquamarine;">BRIEF NOTE ON ZODIAC</h1>
+    <p style="color:black">
+      Once upon a time, in a celestial realm, there was a gathering of twelve wise and ancient beings known as the Zodiac
+      Council. Each member of the council possessed unique qualities and embodied the essence of a specific zodiac sign.
+      The council believed that the alignment of the stars and planets at the time of a person's birth influenced their 
+      destiny and shaped their character. They decided to create a system that would reflect these celestial influences
+      and provide guidance to those on Earth.
+      The council convened for twelve consecutive nights, each night dedicated to the creation of a distinct zodiac sign. 
+      They carefully studied the patterns of the cosmos and imbued each sign with its own symbolic representation and meaning.
+      As the first rays of dawn broke on the twelfth day, the council completed their work. <b>Aries</b>, the first sign, was bestowed 
+      with the spirit of courage, determination, and leadership.<b>Taurus</b>, the second sign, embodied practicality, stability, and 
+      a strong work ethic.
+      <b>Gemini</b>, the sign of adaptability and curiosity, was represented by the image of twins. <b>Cancer</b>, the compassionate and 
+      intuitive  sign, took the form of a nurturing crab. <b>Leo</b>, the charismatic and generous sign, proudly bore the symbol of
+      the regal lion.<b>Virgo</b>, with its attention to detail and analytical thinking, was symbolized by the image of a maiden. <b>Libra</b>, 
+      the sign of harmony and justice, held the scales as a reminder of the importance of balance. <b>Scorpio</b>, the intense and 
+      passionate sign, took the form of a mighty scorpion.
+      <b>Sagittarius</b>, the adventurous and optimistic sign, became the archer, forever aiming for new horizons. <b>Capricorn</b>, the  
+      sign of ambition and practicality, was represented by the steadfast mountain goat. <b>Aquarius</b>, the independent and innovative 
+      sign,carried the vessel of water as a symbol of enlightenment. Finally, <b>Pisces</b>, the empathetic and imaginative sign, was 
+      portrayed as two fish swimming in opposite directions, representing duality and the power of intuition.
+      With the completion of the zodiac signs, the council dispersed, their wisdom and influence forever embedded in the cosmos.
+      From that day forward, people on Earth would look to the zodiac signs as a source of inspiration, guidance, and 
+      self-discovery. And so, the meaning of each zodiac sign was woven into the fabric of human existence, as people embraced 
+      the qualities bestowed  upon them by the celestial council, seeking to understand themselves and navigate their journey 
+      through life.
+    </p>
+    <img src="https://th.bing.com/th/id/R.c5cc9d9eefb32ef8c4bb369d676e5b7f?rik=YXOWwA9LITM05g&pid=ImgRaw&r=0" width="60%"><br><br>
+    
+    <iframe width="350"  src="https://www.youtube.com/embed/Lllv0oW3SXc?si=88vL8n-ehQIOlBlw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+  </div>
+
+  <div class="footer">
+    <p>&copy; 2024 BMI AND ZODAIC TELLER. All rights reserved.</p>
+    <p>Designed and developed by kapital.</p>
+    <p>Contact us: 
+      <a href="mailto:kapigere00@gmail.com">Email</a> |
+      <a href="https://t.me/@eregAp">Telegram</a> |
+      <a href="https://www.facebook.com/kapitalgebrehiwet">Facebook</a> |
+      <a href="https://www.tiktok.com/@kapigere27">TikTok</a>
+    </p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
