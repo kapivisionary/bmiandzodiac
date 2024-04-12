@@ -1,3 +1,141 @@
+/* styles.css */
+
+/* Styles for laptops and larger screens */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 20px;
+  background-color: lightslategray;
+
+}
+
+.app-section {
+  margin-bottom: 30px;
+  background-color:grey;
+  padding: 20px;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-style: inherit;
+  font-size: 20px;}
+  .app-section.bmi-calculator {
+    background-image: url("https://th.bing.com/th/id/R.73294f13671a7331304b24e061dfd42d?rik=uHrRXP6sUcFu8Q&pid=ImgRaw&r=0");
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .app-section.birthday-calculator {
+    background-size: cover;
+    background-position: center;
+  }
+  
+
+h1 {
+  text-align: center;
+  color: #da2727;
+}
+
+h2 {
+  color: #333;
+}
+
+.input-container {
+  display: flex;
+  color: aquamarine;
+}
+
+input[type="text"],
+input[type="number"] {
+  flex: 1;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  border:  none;
+  border-radius: 4px;
+  background-color: #2a99ac44;
+  color:blue;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+#bmiResult {
+  text-align: center;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Styles for phones only */
+@media (max-width: 767px) {
+  body {
+    margin: 10px;
+  }
+
+  .app-section {
+    padding: 10px;
+    font-size: 18px;
+  }
+
+  input[type="text"],
+  input[type="number"] {
+    padding: 8px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  .input-container {
+    flex-direction: column;
+  }
+
+  input[type="text"],
+  input[type="number"] {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+
+container {
+    display: block;
+}
+
+.sidebar {
+    flex: 1;
+    
+}
+
+
+.content {
+    flex: 2;
+}
+
+.tablink {
+    display:block;
+    width: 100%;
+    padding: 10px;
+    background-color: #0ba581;
+    border: none;
+    text-align: left;
+    cursor: grab;
+    background-image:url(https://th.bing.com/th/id/R.05c2f26f4a0ba79256c0d11c3be15866?rik=skAZOcFoGiKi7A&pid=ImgRaw&r=0);
+}
+
+.tablink.active {
+    background-color:tomato;
+    
+}
+
+.tabcontent {
+    display: none;
+    padding: 20px;
+}
 .footer {
   text-align: center;
   background-color:grey;
